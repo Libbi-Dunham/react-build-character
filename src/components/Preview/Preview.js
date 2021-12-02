@@ -5,9 +5,9 @@ import './Preview.css';
 export default function Preview({ head, middle, bottom, catchphrase }) {
   return (
     <div className={`preview ${catchphrase}`}>
-      <p> {head} </p>
-      <p> {middle} </p>
-      <p> {bottom} </p>
+      <img alt={head} src={`${process.env.PUBLIC_URL}/${head}-head.png`} />
+      <img alt={middle} src={`${process.env.PUBLIC_URL}/${middle}-middle.png`} />
+      <img alt={bottom} src={`${process.env.PUBLIC_URL}/${bottom}-bottom.png`} />
       <p> {catchphrase} </p>
     </div>
   );
