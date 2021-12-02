@@ -34,7 +34,7 @@ export default function Editor({ setHead, setMiddle, setBottom, setCatchphrase }
 
       <div className="editor">
         <label>Catch Phrase!</label>
-        <input type="text" value={name} onChange={(e) => setCatchphrase(e.target.value)} />
+        <input type="text" onChange={(e) => setCatchphrase(e.target.value)} />
         <button>Add!</button>
       </div>
     </>
