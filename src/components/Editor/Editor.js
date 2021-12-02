@@ -80,8 +80,8 @@ export default function Editor({
 
       <div className="editor">
         <label>Catch Phrase!</label>
-        <input type="text" onChange={(e) => setCatchphrase(e.target.value)} />
-        <button onChange={handleClick}>Add!</button>
+        <input type="text" value={catchphrase} onChange={(e) => setCatchphrase(e.target.value)} />
+        <button onClick={handleClick}>Add!</button>
       </div>
     </>
   );
