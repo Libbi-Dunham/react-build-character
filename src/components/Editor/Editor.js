@@ -26,9 +26,10 @@ export default function Editor({ setHead, setMiddle, setBottom, setCatchphrase }
       <div className="editor">
         <label>Bottom</label>
         <select onChange={(e) => setBottom(e.target.value)}>
-          <option value="Single-Leg">Single Leg</option>
-          <option value="White-Pants">White Pants</option>
-          <option value="Blue-Jeans">Blue Jeans</option>
+          <option value="leg">Single Leg</option>
+          <option value="white">White Pants</option>
+          <option value="blue">Blue Jeans</option>
+          <option value="dog">Dog Pants</option>
         </select>
       </div>
 
