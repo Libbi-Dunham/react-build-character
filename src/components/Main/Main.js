@@ -10,6 +10,7 @@ export default function Main() {
   const [middle, setMiddle] = useState('');
   const [bottom, setBottom] = useState('');
   const [catchphrase, setCatchphrase] = useState('');
+
   return (
     <main>
       <Preview {...{ head, middle, bottom, catchphrase }} />

@@ -3,15 +3,17 @@ import React from 'react';
 export default function Editor({
   catchphrase,
   setHeadCount,
+  setMiddleCount,
+  setBottomCount,
   setHead,
   setMiddle,
   setBottom,
   setCatchphrase,
   setCatchphraseList,
-  setCatchphraseCount,
+  // setCatchphraseCount,
   // handleHeadCount,
-  handleMiddleCount,
-  handleBottomCount,
+  // handleMiddleCount,
+  // handleBottomCount,
   // handleClick,
   // handleCatchphraseCount,
 }) {
@@ -21,14 +23,24 @@ export default function Editor({
     setCatchphrase('');
   };
 
-  const handleCatchphraseCount = (e) => {
-    setCatchphrase(e.target.value);
-    setCatchphraseCount((prevState) => prevState + 1);
-  };
+  // const handleCatchphraseCount = (e) => {
+  //   setCatchphrase(e.target.value);
+  //   setCatchphraseCount((prevState) => prevState + 1);
+  // };
 
   const handleHeadCount = (e) => {
     setHead(e.target.value);
     setHeadCount((prevState) => prevState + 1);
+  };
+
+  const handleMiddleCount = (e) => {
+    setMiddle(e.target.value);
+    setMiddleCount((prevState) => prevState + 1);
+  };
+
+  const handleBottomCount = (e) => {
+    setBottom(e.target.value);
+    setBottomCount((prevState) => prevState + 1);
   };
 
   return (
