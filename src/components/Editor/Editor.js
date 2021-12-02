@@ -6,6 +6,9 @@ export default function Editor({
   setMiddleCount,
   setBottomCount,
   setHead,
+  head,
+  middle,
+  bottom,
   setMiddle,
   setBottom,
   setCatchphrase,
@@ -47,7 +50,7 @@ export default function Editor({
     <>
       <div className="editor">
         <label>Head</label>
-        <select value={setHead} onChange={handleHeadCount}>
+        <select value={head} onChange={handleHeadCount}>
           <option value="Bird">Bird</option>
           <option value="Duck">Duck</option>
           <option value="Dog">Dog</option>
@@ -57,7 +60,7 @@ export default function Editor({
 
       <div className="editor">
         <label>Middle</label>
-        <select value={setMiddle} onChange={handleMiddleCount}>
+        <select value={middle} onChange={handleMiddleCount}>
           <option value="Blue">Blue</option>
           <option value="Fancy">Fancy</option>
           <option value="Pink">Pink</option>
@@ -67,7 +70,7 @@ export default function Editor({
 
       <div className="editor">
         <label>Bottom</label>
-        <select value={setBottom} onChange={handleBottomCount}>
+        <select value={bottom} onChange={handleBottomCount}>
           <option value="leg">Single Leg</option>
           <option value="white">White Pants</option>
           <option value="blue">Blue Jeans</option>
