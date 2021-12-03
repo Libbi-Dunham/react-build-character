@@ -23,6 +23,10 @@ Object {
           height="75"
           src="/blue-pants.png"
         />
+        <p>
+           
+           
+        </p>
       </div>
     </div>
   </body>,
@@ -45,6 +49,10 @@ Object {
         height="75"
         src="/blue-pants.png"
       />
+      <p>
+         
+         
+      </p>
     </div>
   </div>,
   "debug": [Function],
