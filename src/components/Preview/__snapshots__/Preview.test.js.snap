@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="preview undefined"
+        class="clothes"
       >
         <img
           alt="duck"
@@ -32,7 +32,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="preview undefined"
+      class="clothes"
     >
       <img
         alt="duck"

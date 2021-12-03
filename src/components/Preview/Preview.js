@@ -16,7 +16,7 @@ export default function Preview({
 }) {
   return (
     <>
-      <div className={`preview ${catchphrase}`}>
+      <div className="clothes">
         <img height="75" alt={head} src={`${process.env.PUBLIC_URL}/${head}-head.png`} />
         <img height="75" alt={middle} src={`${process.env.PUBLIC_URL}/${middle}-middle.png`} />
         <img height="75" alt={bottom} src={`${process.env.PUBLIC_URL}/${bottom}-pants.png`} />
