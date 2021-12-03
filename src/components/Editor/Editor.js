@@ -13,24 +13,12 @@ export default function Editor({
   setBottom,
   setCatchphrase,
   setCatchphraseList,
-  // setCatchphraseCount,
-  // handleHeadCount,
-  // handleMiddleCount,
-  // handleBottomCount,
-  // handleClick,
-  // handleCatchphraseCount,
 }) {
   const handleClick = () => {
     setCatchphraseList((prevState) => [...prevState, catchphrase]);
 
     setCatchphrase('');
   };
-
-  // const handleCatchphraseCount = (e) => {
-  //   setCatchphrase(e.target.value);
-  //   setCatchphraseCount((prevState) => prevState + 1);
-  // };
-
   const handleHeadCount = (e) => {
     setHead(e.target.value);
     setHeadCount((prevState) => prevState + 1);
@@ -62,7 +50,7 @@ export default function Editor({
         <label>Middle</label>
         <select value={middle} onChange={handleMiddleCount}>
           <option value="Blue">Blue</option>
-          <option value="Fancy">Fancy</option>
+          <option value="dress">Fancy</option>
           <option value="Pink">Pink</option>
           <option value="Red">Red</option>
         </select>

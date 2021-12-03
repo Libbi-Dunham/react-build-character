@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import Preview from '../../components/Preview/Preview';
 import Editor from '../../components/Editor/Editor';
+import background from '../../background.jpg';
 
 import './Main.css';
 
@@ -16,7 +17,7 @@ export default function Main() {
   const [catchphraseList, setCatchphraseList] = useState([]);
 
   return (
-    <main>
+    <main style={{ backgroundImage: `url(${background})` }}>
       <Preview
         {...{
           head,
@@ -44,8 +45,8 @@ export default function Main() {
         }}
       />
       {!!headCount && <p>You changed the Head {headCount} times</p>}
-      {!!middleCount && <p>You changed the Middle {headCount} times</p>}
-      {!!bottomCount && <p>You changed the Bottom {headCount} times</p>}
+      {!!middleCount && <p>You changed the Middle {middleCount} times</p>}
+      {!!bottomCount && <p>You changed the Bottom {bottomCount} times</p>}
       {!!catchphraseList && <p>{catchphraseList}</p>}
     </main>
   );
