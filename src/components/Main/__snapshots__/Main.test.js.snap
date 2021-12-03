@@ -20,10 +20,6 @@ Object {
           height="75"
           src="/undefined-pants.png"
         />
-        <p>
-           
-           
-        </p>
       </div>
       <div
         class="editor"
@@ -113,7 +109,7 @@ Object {
         </select>
       </div>
       <div
-        class="editor"
+        class="catchphrase"
       >
         <label>
           Catch Phrase!
@@ -144,10 +140,6 @@ Object {
         height="75"
         src="/undefined-pants.png"
       />
-      <p>
-         
-         
-      </p>
     </div>
     <div
       class="editor"
@@ -237,7 +229,7 @@ Object {
       </select>
     </div>
     <div
-      class="editor"
+      class="catchphrase"
     >
       <label>
         Catch Phrase!

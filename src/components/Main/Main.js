@@ -47,7 +47,13 @@ export default function Main() {
       {!!headCount && <p>You changed the Head {headCount} times</p>}
       {!!middleCount && <p>You changed the Middle {middleCount} times</p>}
       {!!bottomCount && <p>You changed the Bottom {bottomCount} times</p>}
-      {!!catchphraseList && <p>{catchphraseList}</p>}
+      {!!catchphraseList && (
+        <p>
+          {catchphraseList.map((elem) => (
+            <p key={elem}>{elem}</p>
+          ))}
+        </p>
+      )}
     </main>
   );
 }

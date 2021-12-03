@@ -66,7 +66,7 @@ export default function Editor({
         </select>
       </div>
 
-      <div className="editor">
+      <div className="catchphrase">
         <label>Catch Phrase!</label>
         <input type="text" value={catchphrase} onChange={(e) => setCatchphrase(e.target.value)} />
         <button onClick={handleClick}>Add!</button>
